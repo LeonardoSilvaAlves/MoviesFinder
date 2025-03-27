@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder - Estilo Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🎬 Movie Finder</h1>
+        <div class="search-box">
+            <input type="text" id="movieInput" placeholder="Digite o nome do filme...">
+            <button id="searchButton">
+                <i class="fas fa-search"></i> Buscar
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="featuredMovies" class="movie-section">
+            <h2>Filmes Populares</h2>
+            <div class="movie-list" id="featuredList"></div>
+        </section>
+        
+        <section id="searchResults" class="movie-section hidden">
+            <h2>Resultados da Busca</h2>
+            <div class="movie-list" id="movieInfo"></div>
+        </section>
+    </main>
+    
+    <button id="backButton" class="hidden">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </button>
+</body>
+</html>
